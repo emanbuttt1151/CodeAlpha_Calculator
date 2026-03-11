@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', 'sans-serif';
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input {
+    border: none;
+    outline: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    background: #2d3748;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.2s ease;
+}
+
+
+/* Hover Glow */
+
+.calculator form input:hover {
+    background: #374151;
+    box-shadow: 0 0 10px #33ffd8, 0 0 20px #33ffd8;
+}
+
+/* Click Animation */
+
+.calculator form input:active {
+    transform: scale(0.90);
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal {
+    width: 145px;
+    background: #22c55e;
+}
+
+form input.operator {
+    color: #33ffd8;
+
+}
+
+form input.equal:hover {
+    background: #16a34a;
+}
